@@ -1,0 +1,398 @@
+:root {
+  --space: min(5vw, 4rem);
+  --hdr-color: var(--black-primary);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(4rem + 140px);
+  font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  text-wrap: pretty;
+}
+
+.main-content {
+  align-items: stretch;
+  width: min(100%, 700px);
+  margin-inline: auto;
+}
+
+.news-post-title div:first-child {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+}
+
+.back-link {
+  background-color: rgb(255 255 255 / 0.25);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+  color: var(--black-secondary);
+  text-decoration: none;
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+
+.back-link svg {
+  rotate: -90deg;
+}
+
+.back-link:hover {
+  background-color: white;
+  color: var(--green-bright);
+}
+
+.eyebrow {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--green-primary);
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  border-radius: 10rem;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.news-post-title h1 {
+  font-size: clamp(3.5rem, 5vw, 4.5rem);
+  line-height: 1;
+  margin-top: 0.5em;
+}
+
+.news-post-title p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+.contents {
+  padding-block: 2rem;
+}
+
+.contents-list {
+  list-style: none;
+  margin-left: 0 !important;
+}
+
+.contents li {
+  counter-increment: section;
+}
+
+.contents-list a,
+.contents-list a:visited {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: var(--black-secondary);
+  border-radius: 10rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+}
+
+.contents-list a::before {
+  content: counter(section);
+  font-weight: 600;
+  background-color: var(--green-bright);
+  display: block;
+  color: white;
+  font-size: 1rem;
+  line-height: 1;
+  width: 1.625rem;
+  aspect-ratio: 1;
+  place-content: center;
+  text-align: center;
+  border-radius: 10rem;
+  transition: all 0.5s;
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
+  flex-shrink: 0;
+}
+
+.contents-list a.active {
+  background-color: var(--green-bright);
+  color: white;
+}
+
+.contents-list a.active::before {
+  background-color: white;
+  color: var(--green-primary);
+}
+
+.contents-list a:not(.active):hover {
+  background-color: rgb(0 0 0 / 0.1);
+  background-color: white;
+}
+
+.news-post-content {
+  gap: 4rem;
+  font-size: 1rem;
+  padding-bottom: 4rem;
+  font-size: 1.25em;
+  line-height: 1.4;
+}
+
+.news-post-content > section {
+  counter-increment: section;
+}
+
+.news-post-content > section + section {
+  margin-top: 2.5em;
+}
+
+.news-post-content h2::before {
+  content: "Section " counter(section);
+  color: var(--green-bright);
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.2;
+  color: var(--green-primary);
+  border-left: solid 2px var(--green-bright);
+  padding-left: 1.25rem;
+  text-box-edge: cap alphabetic;
+  text-box-trim: trim-both;
+  margin-block: 1.5em !important;
+}
+
+.flow > * {
+  margin: 0;
+}
+
+.flow > * + * {
+  margin-top: 1em;
+}
+
+.flow ul,
+.flow ol {
+  margin-left: 2rem;
+}
+
+.flow li + li {
+  margin-top: 0.5em;
+}
+
+p,
+ul,
+ol {
+  text-wrap: pretty;
+}
+
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--hdr-color);
+}
+
+* + :is(h2, h3, h4, h5, h6) {
+  margin-top: 1.75em !important;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 5vw, 2.1rem);
+}
+
+h4 + * {
+  margin-top: 0.5em !important;
+}
+
+#sources ul {
+  font-size: var(--fs-sm);
+  color: var(--black-secondary);
+}
+
+.callout {
+  background-color: var(--black-secondary);
+  --hdr-color: var(--green-bright);
+  color: white;
+  padding: min(3rem, 5vw);
+  border-radius: min(1.5rem, 2.5vw);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+a,
+a:visited {
+  color: var(--green-bright);
+}
+
+sup {
+  font-size: 0.625em;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--green-primary);
+  margin-left: 0.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 500;
+}
+
+.sources-list {
+  font-size: 0.75em;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+}
+
+.sources-list li {
+  line-height: 1.2;
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    width: auto;
+  }
+  .news-post {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    align-items: start;
+    padding-inline: 3rem;
+    gap: 3rem;
+    padding-block: 4rem;
+  }
+  .news-post-title {
+    position: sticky;
+    top: calc(4rem + 140px);
+  }
+  .news-post-content {
+    background-color: rgb(255 255 255 / 0.25);
+    padding: min(3rem, 5vw);
+    border-radius: min(3rem, 5vw);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 0.1);
+  }
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+@media print {
+  body {
+    background-color: white;
+    font-size: 12px;
+  }
+  .nav,
+  .back-link {
+    display: none;
+  }
+
+  .main-content {
+    padding-block: 2rem;
+  }
+
+  .eyebrow {
+    border: solid 1px #ccc;
+  }
+}
+
+/* copy citation toast */
+
+.icon-check {
+  display: none;
+}
+
+.is-copied,
+.is-copied:hover {
+  background: var(--white);
+  color: var(--green-bright);
+  border-color: currentColor;
+}
+
+.is-copied .icon-copy {
+  display: none;
+}
+
+.is-copied .icon-check {
+  display: inline;
+}
+
+/* icon swap only (no button styling) */
+#copyCitationBtn {
+  position: relative;
+  transition: all 150ms ease;
+} /* needed so the icons can overlap */
+#copyCitationBtn .copy-icon,
+#copyCitationBtn .check-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transition:
+    opacity 140ms ease,
+    transform 140ms ease;
+}
+
+#copyCitationBtn .copy-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+#copyCitationBtn .check-icon {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+#copyCitationBtn.is-copied .copy-icon {
+  opacity: 0;
+  transform: scale(0.9);
+}
+#copyCitationBtn.is-copied .check-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #copyCitationBtn .copy-icon,
+  #copyCitationBtn .check-icon {
+    transition: none;
+  }
+}
+
+/* optional helper for screen-reader-only live region */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

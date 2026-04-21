@@ -1,0 +1,14 @@
+# Jekyll build output
+_site/
+
+# Caches and temporary files
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Optional: Ruby dependencies (if you want GitHub to handle versions)
+# Gemfile.lock

@@ -1,0 +1,691 @@
+/* ==============================================
+   RESPONSIVE MEDIA QUERIES
+   ============================================== */
+
+/* Large tablets and small desktops - 769px to 1440px */
+@media (max-width: 1440px) and (min-width: 769px) {
+  .hero-title {
+    font-size: 5rem;
+  }
+
+  .statistics-header {
+    max-width: 75%;
+  }
+
+  .statistics-container {
+    border-radius: 2rem;
+  }
+
+  .statistics-grid {
+    width: 100%;
+    max-width: 65rem;
+  }
+
+  .approach-section {
+    padding: 3rem;
+  }
+
+  .approach-header {
+    padding: 0 1.25rem;
+  }
+
+  .team-section {
+    padding: 5rem 3.75rem;
+  }
+
+  .contact-content p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Statistics Section */
+  .statistics-container {
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+    padding: 0;
+    border-radius: 40px;
+    gap: unset;
+  }
+
+  .statistics-header {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .statistics-grid {
+    flex-direction: column;
+    width: 100%;
+    gap: unset;
+  }
+
+  .stat-card {
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+
+  .stat-card:first-child {
+    border-top: none;
+  }
+
+  /* Problem Sections */
+  .problem-row {
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .problem-row-reverse {
+    flex-direction: column;
+  }
+
+  .problem-image {
+    width: 100%;
+    height: 250px;
+    max-width: unset;
+  }
+
+  .problem-content {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    min-height: unset;
+  }
+
+  .approach-header {
+    position: relative;
+    width: 100%;
+  }
+
+  .approach-pillars {
+    flex-direction: column;
+    width: 100%;
+    top: auto;
+    position: relative;
+    transform: none;
+    left: auto;
+    margin-top: 1rem;
+    gap: 16px;
+  }
+
+  .pillar-card {
+    width: 100%;
+  }
+}
+
+/* Tablet and below - 768px */
+@media (max-width: 768px) {
+  .nav {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.2;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    width: 100%;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem; /* 56px */
+  }
+
+  .hero-description {
+    font-size: 1.25rem; /* 20px */
+    width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Approach Section */
+  .approach-section {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    gap: 2rem;
+  }
+
+  .approach-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .approach-title {
+    font-size: 2rem; /* 32px */
+  }
+
+  .approach-description {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  /* Team Section */
+  .team-section {
+    width: 100%;
+    padding: 50px 25px;
+  }
+
+  .leadership-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .person-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .person-info {
+    gap: 24px;
+  }
+
+  .person-highlights {
+    width: 100%;
+  }
+
+  .person-photo {
+    width: 225px;
+    height: 225px;
+  }
+
+  .person-photo img {
+    width: 150px;
+    height: 150px;
+    margin: 37.5px;
+  }
+
+  /* Advisors */
+  .advisors-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .advisor-card {
+    padding: 25px;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .leader-hover,
+  .advisor-hover {
+    padding: 25px;
+  }
+
+  .leader-hover .leader-linkedin,
+  .advisor-hover .advisor-linkedin {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* News Section */
+  .news-section {
+    width: 100%;
+  }
+
+  .news-carousel {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .news-carousel .carousel-btn {
+    display: none; /* Hide desktop carousel buttons on tablet and mobile */
+  }
+
+  .carousel-buttons-mobile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .news-card {
+    width: 100%;
+    padding: 32px 25px;
+  }
+
+  /* Contact Section */
+
+  .contact-content h2 {
+    font-size: 2rem; /* 32px — matches approach-title at this breakpoint */
+  }
+
+  .contact-content p {
+    font-size: 1.125rem; /* 18px — matches approach-description at this breakpoint */
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+  /* Reset container to mobile width */
+
+  /* Header - Mobile specific */
+  .nav {
+    display: flex;
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  /* Hero Section - Mobile */
+  .hero-section {
+    width: 100%;
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 2.625rem; /* 42px */
+    gap: 6px;
+  }
+
+  .hero-description {
+    font-size: 1.1875rem; /* 19px */
+    width: 100%;
+  }
+
+  .btn {
+    font-size: 1.125rem; /* 18px */
+    border-radius: 12.5px;
+    min-width: 160px;
+  }
+
+  .btn-icon {
+    width: 18.75px;
+    height: 18.75px;
+  }
+
+  /* Statistics Section - Mobile */
+  .statistics-container {
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  .section-title {
+    font-size: 1.6875rem; /* 27px */
+  }
+
+  .section-description {
+    font-size: 1rem; /* 16px */
+  }
+
+  .stat-value {
+    width: 200px;
+    height: 75px;
+  }
+
+  .stat-value p {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .stat-label {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  /* Problem Sections - Mobile */
+  .problem-sections {
+    gap: 2.5rem;
+  }
+
+  .problem-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .problem-row-reverse {
+    flex-direction: column;
+  }
+
+  .problem-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .problem-content {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    gap: 1rem;
+  }
+
+  .problem-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .problem-text h3 {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  .problem-text p {
+    font-size: 1rem; /* 16px */
+  }
+
+  /* Approach Section - Mobile */
+  .approach-section {
+    margin: 0 auto;
+    height: auto;
+    border-radius: 40px;
+  }
+
+  .approach-background {
+    border-radius: 40px;
+  }
+
+  .approach-background img {
+    border-radius: 40px;
+  }
+
+  .approach-header {
+    width: 100%;
+    padding: 25px 16px 0;
+    gap: 16px;
+  }
+
+  .badge {
+    font-size: 1rem; /* 16px */
+  }
+
+  .approach-title {
+    font-size: 1.8125rem; /* 29px */
+  }
+
+  .approach-description {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .approach-pillars {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .pillar-card {
+    width: 100%;
+    padding: 3rem;
+  }
+
+  .pillar-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .pillar-card h3 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .pillar-card p {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  /* Team Section - Mobile */
+  .team-section {
+    width: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    gap: 3rem;
+  }
+
+  .leadership-grid {
+    gap: 16px;
+  }
+
+  .team-header {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .team-header h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  .team-header p {
+    font-size: 1rem; /* 16px */
+  }
+
+  .person-card {
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+  }
+
+  .person-photo {
+    width: 275px;
+    height: 275px;
+  }
+
+  .person-photo img {
+    width: 194.46px;
+    height: 194.46px;
+    margin: 40.27px;
+  }
+
+  .person-name {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .person-title {
+    font-size: 1.3125rem; /* 21px */
+  }
+
+  .person-bio {
+    font-size: 1rem; /* 16px */
+  }
+
+  .person-highlight {
+    font-size: 0.9375rem; /* 15px */
+  }
+
+  /* Advisors - Mobile */
+  .advisors-title {
+    font-size: 1.625rem; /* 26px */
+    text-align: center;
+  }
+
+  .advisors-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .advisor-card {
+    width: 100%;
+    padding: 25px;
+    height: 400px;
+  }
+
+  .leader-hover,
+  .advisor-hover {
+    padding: 25px;
+  }
+
+  .leader-hover .leader-linkedin,
+  .advisor-hover .advisor-linkedin {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .advisor-info h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .advisor-info p {
+    font-size: 1.3125rem; /* 21px */
+  }
+
+  .advisor-bio {
+    font-size: 1rem; /* 16px */
+  }
+
+  /* News Section - Mobile */
+  .news-section {
+    width: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    gap: 1.5rem;
+  }
+
+  .news-card {
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .news-card h3 {
+    font-size: 1.3125rem; /* 21px */
+  }
+
+  .news-card p {
+    font-size: 1.0625rem; /* 17px */
+  }
+
+  /* Contact Section - Mobile */
+  .contact-content h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  .contact-content p {
+    width: 100%;
+    font-size: 1.125rem; /* 18px */
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Footer - Mobile */
+  .footer {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: auto;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer-left {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .footer-item {
+    font-size: 0.875rem; /* 14px */
+    width: 100%;
+  }
+
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-right p {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  /* Background decorations - adjust for mobile */
+  .background-decoration {
+    top: -110.51px;
+    width: 1693.687px;
+    height: 943.018px;
+  }
+
+  /* Back to top - closer to edge on mobile */
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .team-section,
+  .approach-section,
+  .news-section {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem; /* 36px */
+  }
+
+  .hero-description {
+    font-size: 1rem; /* 16px */
+  }
+
+  .statistics-container,
+  .approach-section,
+  .team-section,
+  .news-section {
+    max-width: 340px;
+  }
+}
